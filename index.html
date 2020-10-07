@@ -6,6 +6,7 @@
             <title></title>
 
         <!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="lib/leaflet/leaflet.css">
         <link rel="stylesheet" href="css/style.css">
         <!--[if IE<9]>
             <link rel="stylesheet" href="css/style.ie.css">
@@ -13,11 +14,22 @@
 
          <!--you can also place internal styles here;
              place these within <style> tags-->
-        
+
     </head>
 
-    <body>
+    <body style="background-color: #2A2A2E;">
         <!--put your initial page content here-->
+        <div class='mainContainer'>
+
+            <!-- Info Text Container -->
+            <div class='leftContainer'>
+
+            </div>
+
+            <!-- Leaflet Container -->
+            <div id="mapid"></div>
+
+        </div>
 
         <!--you can also use this space for internal scripts;
         place these within <script> tags-->
@@ -25,4 +37,9 @@
         <!--put your external script links here-->
         <script type="text/javascript" src="js/main.js"></script>
     </body>
+
+    <script type="text/javascript" src="lib/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="lib/leaflet/leaflet.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    
 </html>

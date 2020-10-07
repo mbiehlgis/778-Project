@@ -1,0 +1,74 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.mainContainer {
+  overflow: hidden;
+}
+
+
+/* -------- MAP -------- */
+#mapid {
+  position: relative;
+  float: right;
+  flex: 70%;
+  width: 70%;
+  height: 98.5vh;
+  border: 3px solid white;
+  border-radius: 0px;
+  overflow-x: none;
+  margin-left: 0;
+  padding-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* -------- INFO BOX -------- */
+.leftContainer {
+  position: relative;
+  float: left;
+  flex: 100%;
+  max-width: 100%;
+  width: 29%;
+  height: 98.5vh;
+  border: 3px solid white;
+  overflow-x: none;
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -ms-overflow-style: none;
+}
+
+
+/* .body-text {
+  max-width: 100%;
+  height: 80vh;
+  flex: 100%;
+  border: 3px solid white;
+  border-radius: 10px;
+  background-color: #E0E0E0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-right: 17px;
+  margin-right: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  scrollbar-width: .3;
+  -ms-overflow-style: none
+} */
+
+/* #mapid {
+  position: relative;
+  float: right;
+  flex: 66%;
+  width: 66%;
+  height: 80vh;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin-left: 0;
+  padding-left: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+} */
