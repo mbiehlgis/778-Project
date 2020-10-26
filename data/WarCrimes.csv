@@ -1,18 +1,18 @@
-Site,Location,Year,Victims,Crime,Latitude,Longitude
-Alexandra Hospital,Singapore,,200,Massacre,43.449217,142.777095
-Sook Ching,Singapore,,70000,Systemic Purge,40.699468,140.966552
-Manila,Philippines,,100000,Massacre and Rape,39.572697,141.373403
-Bataan,Philippines,,75000,Death March,,
-Laha Airfield,Indonesia,,300,Massacre,,
-Bangka Island,Indonesia,,85,Massacre and Rape,,
-Parit Sulong,Malaysia,,300,Massacre,,
-Palawan,Philippines,,139,Massacre,,
-SS Behar,Indonesia,,36,Massacre,,
-SS Tjisalak,Indian Ocean,,105,Massacre,,
-Wake Island,Micronesia,1943,99,Massacre,,
-Faha,Guam,1944,30,Massacre,,
-Tinta,Guam,1944,46,Massacre,,
-Shinyo Maru,Philippines,1944,668,Massacre,,
-Unit 731,China,1935-1945,12000,Human Experimentation,,
-Chichijima,Bonin Islands,1944,5,Cannibalism,,
-Nanking,China,1937,"300,000",Massacre and Rape,,
+Site,Location,Year,Victims,Crime,Latitude,Longitude,id
+Alexandra Hospital,Singapore,,200,Massacre,1.286148,103.802482,A
+Sook Ching,Singapore,,70000,Systemic Purge,2.521947,113.833569,B
+Manila,Philippines,,100000,Massacre and Rape,14.6042,120.9822,C
+Bataan,Philippines,,75000,Death March,14.723058,120.428554,D
+Laha Airfield,Indonesia,,300,Massacre,-3.686106,128.176359,E
+Bangka Island,Indonesia,,85,Massacre and Rape,-2.021179,106.114304,F
+Parit Sulong,Malaysia,,300,Massacre,4.481903,100.911485,G
+Palawan,Philippines,,139,Massacre,9.053145,117.912084,H
+SS Behar,Indonesia,,36,Massacre,-10.489873,105.64527,I
+SS Tjisalak,Indian Ocean,,105,Massacre,-12.002,96.8785,J
+Wake Island,Micronesia,1943,99,Massacre,19.285663,166.644535,K
+Faha,Guam,1944,30,Massacre,13.427861,144.733813,L
+Tinta,Guam,1944,46,Massacre,13.354173,144.703614,M
+Shinyo Maru,Philippines,1944,668,Massacre,6.91028,122.07389,N
+Unit 731,China,1935-1945,12000,Human Experimentation,45.747647,126.624467,O
+Chichijima,Bonin Islands,1944,5,Cannibalism,26.652351,142.158578,P
+Nanking,China,1937,"300,000",Massacre and Rape,32.044972,118.773596,Q

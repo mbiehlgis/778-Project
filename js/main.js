@@ -1,9 +1,10 @@
 var map;
+var attributes = []; //making a global attribute variable with an empty array
 
 function createMap(){
     // create map and set parameters
      map = L.map('mapid', {
-        center: [36.20, 136.25],
+        center: [20.20, 136.25],
         zoom: 2,
         minZoom: 4,
         maxZoom: 8,
@@ -18,26 +19,35 @@ function createMap(){
     }).addTo(map);
     map.zoomControl.setPosition('bottomright');
 
+    // calling getData function
+    getData(map);
+
     };
 
 
+//function to retrieve the data from geojson
+function getData(map){
 
+    //load the data and calls functions
+    $.getJSON("data/WarCrimes.geojson", function(response){
 
+      // styling for the circles which are pink with white borders
+      var geojsonMarkerOptions = {
+          fillColor: "#800000",
+          color: "white",
+          weight: 1,
+          opacity: 1,
+          fillOpacity: 0.5,
+      };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      //create geojson layer for map
+      L.geoJson(response, {
+        pointToLayer: function (feature, latlng){
+          return L.circleMarker(latlng, geojsonMarkerOptions);
+        }
+      }).addTo(map);
+    });
+};
 
 
 

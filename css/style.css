@@ -13,7 +13,7 @@ html {
   float: right;
   flex: 70%;
   width: 70%;
-  height: 98.5vh;
+  height: 97.5vh;
   border: 3px solid white;
   border-radius: 0px;
   overflow-x: none;
@@ -23,14 +23,65 @@ html {
   border-bottom-left-radius: 0;
 }
 
-/* -------- INFO BOX -------- */
+.leaflet-popup-content p {
+    margin: 0.2em 0;
+}
+
+.leaflet-popup-content-wrapper {
+  /* background: #FF69B4; */
+  background: #800000;
+  box-shadow: 0 3px 14px rgba(0,0,0,0.4);
+  border: white;
+  opacity: 90%
+}
+
+/* offsetting popup */
+.leaflet-popup {top: -65px !important;}
+
+.leaflet-popup-tip-container {
+   top: 46px !important;
+}
+
+.leaflet-popup-content-wrapper {
+  color: white;
+  font: 13px/1.5 "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.leaflet-control-zoom.leaflet-bar.leaflet-control,
+.leaflet-touch.leaflet-bar {
+  padding-top: 340px;
+  border: 1px;
+}
+
+.leaflet-touch.leaflet-control-layers,
+.leaflet-touch.leaflet-bar {
+  padding-top: 300px;
+}
+
+.leaflet-bar {
+  box-shadow:none ;
+}
+
+.leaflet-bar a {
+  background-color: #800000;
+  color: white;
+  opacity: 90%;
+}
+
+.leaflet-bar a.leaflet-disabled {
+  background-color: #800000;
+  color: white;
+  opacity: 90%;
+}
+
+/* -------- INFO PANEL -------- */
 .leftContainer {
-  position: relative;
+  position: absolute;
   float: left;
   flex: 100%;
   max-width: 100%;
-  width: 29%;
-  height: 98.5vh;
+  width: 30%;
+  height: 97.5vh;
   border: 3px solid white;
   overflow-x: none;
   margin-left: 0;
@@ -39,6 +90,36 @@ html {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   -ms-overflow-style: none;
+}
+
+.title {
+  color: white;
+  font-size: 28pt;
+  line-height: 150%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+.author {
+  position: relative;
+  color: white;
+  font-size: 13pt;
+  line-height: 130%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  bottom: 35px;
+}
+
+.preamble {
+  position: relative;
+  color: white;
+  font-size: 13pt;
+  line-height: 200%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  bottom: 35px;
+  padding-left: 10px;
+  padding-right: 20px;
 }
 
 
