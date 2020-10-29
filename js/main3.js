@@ -4,27 +4,26 @@ var attributes = []; //making a global attribute variable with an empty array
 function createMap(){
     // create map and set parameters
 
-     map = L.map('mapid', {
-        center: [20.20, 136.25],
-        zoom: 2,
-        minZoom: 4,
-        maxZoom: 8,
-        maxBounds: [(25.2, 115.7), (45.7, 155.54)],
+    map = L.map('mapid', {
+      center: [20.20, 136.25],
+      zoom: 2,
+      minZoom: 4,
+      maxZoom: 8,
+      maxBounds: [(25.2, 115.7), (45.7, 155.54)],
     });
 
-                                //Potential Dark Mode Map//
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png', {
-    	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
-    	subdomains: 'abcd',
-    	maxZoom: 30
-    }).addTo(map);
+    // custom mapbox studio basemap
+    L.tileLayer('https://api.mapbox.com/styles/v1/mbiehlgis/ckgv523ct136019p8cuzmsy8x/tiles/256/{z}/{x}/{y}@2x?access_token=pk.eyJ1IjoibWJpZWhsZ2lzIiwiYSI6ImNrODZwaW9vODBrNWUzZm1jdjJzeHF0OTkifQ.UpFmEKrUbl4A7qD8nuaHUQ', {
+        maxZoom: 30,
+        accessToken: 'pk.eyJ1IjoibWJpZWhsZ2lzIiwiYSI6ImNrODZwaW9vODBrNWUzZm1jdjJzeHF0OTkifQ.UpFmEKrUbl4A7qD8nuaHUQ'
+      }).addTo(map);
     map.zoomControl.setPosition('bottomright');
+
 
     // calling getData function
     getData(map);
 
     };
-
 
 
 //calculate radius for each proportional symbol on map

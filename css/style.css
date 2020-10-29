@@ -7,7 +7,7 @@ html {
 }
 
 
-/* -------- MAP -------- */
+/* -------- MAP -------- *//* -------- MAP -------- *//* -------- MAP -------- *//* -------- MAP -------- */
 #mapid {
   position: relative;
   float: right;
@@ -74,7 +74,7 @@ html {
   opacity: 90%;
 }
 
-/* -------- INFO PANEL -------- */
+/* -------- INFO PANEL -------- *//* -------- INFO PANEL -------- *//* -------- INFO PANEL -------- */
 .leftContainer {
   position: absolute;
   float: left;
@@ -83,13 +83,14 @@ html {
   width: 30%;
   height: 97.5vh;
   border: 3px solid white;
-  overflow-x: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
   margin-left: 0;
   padding-left: 0;
   margin-right: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  -ms-overflow-style: none;
+  /* -ms-overflow-style: none; */
 }
 
 .title {
@@ -122,6 +123,24 @@ html {
   padding-right: 20px;
 }
 
+.country {
+  color: white;
+  font-size: 13pt;
+  line-height: 200%;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 15px;
+  padding-right: 20px;
+}
+
+.crime {
+  color: white;
+  font-size: 13pt;
+  line-height: 200%;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 35px;
+  padding-right: 20px;
+
+}
 
 /* .body-text {
   max-width: 100%;
