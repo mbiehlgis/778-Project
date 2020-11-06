@@ -1,3 +1,14 @@
+//smooth anchor scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
 var map;
 var attributes = []; //making a global attribute variable with an empty array
 
@@ -17,7 +28,7 @@ function createMap(){
         maxZoom: 30,
         accessToken: 'pk.eyJ1IjoibWJpZWhsZ2lzIiwiYSI6ImNrODZwaW9vODBrNWUzZm1jdjJzeHF0OTkifQ.UpFmEKrUbl4A7qD8nuaHUQ'
       }).addTo(map);
-    map.zoomControl.setPosition('bottomright');
+    map.zoomControl.setPosition('topright');
 
 
     // calling getData function
@@ -59,10 +70,15 @@ function pointToLayer(feature, latlng, attributes){
     // variable to hold popup content values
     var popupContent = createPopupContent(feature.properties, attribute);
 
-    //bind popup to each circle
-    layer.bindPopup(popupContent, {
-         offset: new L.Point(0,-geojsonMarkerOptions * -20)
-     });
+    // //bind popup to each circle ON CLICK
+    // layer.bindPopup(popupContent, {
+    //      offset: new L.Point(0,-geojsonMarkerOptions * -20)
+    //  });
+
+    //bind popup to each circle ON HOVER
+    layer.bindTooltip(popupContent, {
+      className: 'TooltipClass'
+    });
 
     //returns layer with circle markers
     return layer;

@@ -49,7 +49,7 @@ html {
 
 .leaflet-control-zoom.leaflet-bar.leaflet-control,
 .leaflet-touch.leaflet-bar {
-  padding-top: 340px;
+  padding-top: 430px;
   border: 1px;
 }
 
@@ -72,6 +72,19 @@ html {
   background-color: #800000;
   color: white;
   opacity: 90%;
+}
+
+.leaflet-interactive:hover {
+  fill: yellow !important;
+  transition: .1s ease;
+}
+
+/* POP-UPS */
+
+.TooltipClass {
+  background: #800000;
+  color: white;
+  opacity: .8 !important;
 }
 
 /* -------- INFO PANEL -------- *//* -------- INFO PANEL -------- *//* -------- INFO PANEL -------- */
@@ -119,27 +132,104 @@ html {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   bottom: 35px;
-  padding-left: 10px;
-  padding-right: 20px;
+  padding-left: 20px;
+  padding-right: 40px;
 }
 
 .country {
   color: white;
-  font-size: 13pt;
+  font-size: 20pt;
   line-height: 200%;
   font-family: 'Roboto', sans-serif;
   padding-left: 15px;
   padding-right: 20px;
+  padding-bottom: 10px;
 }
 
 .crime {
   color: white;
+  font-size: 16pt;
+  line-height: 200%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  padding-left: 35px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.crimetext {
+  color: white;
   font-size: 13pt;
   line-height: 200%;
   font-family: 'Roboto', sans-serif;
-  padding-left: 35px;
-  padding-right: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
 
+#readmore {
+  color: orange;
+  font-size: 14pt;
+  opacity: 60%;
+}
+
+.external_link {
+  color: white !important;
+  font-size: 14pt;
+  text-decoration: none;
+  opacity: 80%
+}
+
+a:hover {
+  color: orange !important;
+  opacity: 60%;
+  transition: .2s ease;
+  text-decoration: underline;
+}
+
+
+
+
+/* BACK TO TOP BUTTON */
+
+#back-to-top-container {
+  padding-left: 0px;
+}
+
+#back-to-top-panel {
+  width: 15% !important;
+  height: 20vh !important;
+  position: fixed;
+  z-index: 5 !important;
+  overflow-x: none !important;
+  bottom: -11% !important;
+  pointer-events: none;
+  padding-left: 25%;
+  padding-right: 5%;
+}
+
+#back-to-top-panel :hover{
+  opacity: 80%;
+  transition: .4s;
+}
+
+
+#back-to-top-row {
+  background-color: none !important;
+}
+
+#mobile-toc-column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  visibility: visible !important;
+  pointer-events: all !important;
+  background-color: none !important;
+}
+
+#back-to-top-column img:active {
+  opacity: .4 !important;
+  transition: .2s ease !important;
 }
 
 /* .body-text {
