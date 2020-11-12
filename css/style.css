@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: smooth !important;
 }
 
 .mainContainer {
@@ -21,6 +21,7 @@ html {
   padding-left: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  z-index: 1;
 }
 
 .leaflet-popup-content p {
@@ -103,6 +104,7 @@ html {
   margin-right: 0;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  z-index: 1;
   /* -ms-overflow-style: none; */
 }
 
@@ -144,6 +146,7 @@ html {
   padding-left: 15px;
   padding-right: 20px;
   padding-bottom: 10px;
+  text-decoration: underline;
 }
 
 .crime {
@@ -155,6 +158,7 @@ html {
   padding-left: 35px;
   padding-right: 20px;
   padding-bottom: 10px;
+  letter-spacing: 3pt;
 }
 
 .crimetext {
@@ -167,10 +171,15 @@ html {
   padding-bottom: 10px;
 }
 
+b {
+  font-size: 15pt;
+}
+
 #readmore {
-  color: orange;
-  font-size: 14pt;
+  color: red;
+  font-size: 15pt;
   opacity: 60%;
+  letter-spacing: 3pt;
 }
 
 .external_link {
@@ -181,12 +190,22 @@ html {
 }
 
 a:hover {
-  color: orange !important;
+  color: red !important;
   opacity: 60%;
   transition: .2s ease;
   text-decoration: underline;
 }
 
+
+/* VIDEOS */
+
+#videosource {
+  border-radius: 10px;
+  border-color: #800000;
+  border-width: 6px;
+  height: 300px;
+  width: 440px;
+}
 
 
 
@@ -230,6 +249,43 @@ a:hover {
 #back-to-top-column img:active {
   opacity: .4 !important;
   transition: .2s ease !important;
+}
+
+/* Warning Alert */
+/* The alert message box */
+.alert {
+  padding: 20px;
+  background-color: #800000;
+  color: white;
+  margin-bottom: 15px;
+  z-index: 2;
+  width: 800pt;
+  height: 250pt;
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25pt;
+  border-radius: 10px;
+  border-color: #fff;
+  border-width: 10px;
+  top: 25%;
+  left: 20%;
+}
+
+/* The close button */
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+  color: black;
 }
 
 /* .body-text {

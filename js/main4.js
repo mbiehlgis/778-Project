@@ -1,4 +1,4 @@
-//smooth anchor scrolling
+// //smooth anchor scrolling
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -10,7 +10,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 var map;
-var featureId =0;
 var attributes = []; //making a global attribute variable with an empty array
 
 function createMap(){
@@ -44,22 +43,97 @@ function createSymbols(data, attributes){
         pointToLayer: function(feature, latlng){
 
             return pointToLayer(feature, latlng, attributes);
+        },
+
+        style: function(feature) {
+
+            return {
+              className: feature.properties.id
+            };
         }
 
-        // style: function(feature) {
-        //
-        //     return {
-        //       className: feature.properties.id
-        //     };
-        // }
-
-        // onEachFeature: function (feature, layer) {
-        //     layer.markerID = feature.properties.id;
-            // this.setAttribute('id', feature.properties.id)
-            // layer.setAttribute('id', feature.properties.id);
-            // layer.attr('id':feature.properties.id)
-            // }
     }).addTo(map);
+
+    //smooth anchor scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // EVENT LISTENERS FOR MARKERS ON MAP
+    document.querySelector(".AA").addEventListener("click", function() {
+      window.location.href = "#A";
+    });
+
+    document.querySelector(".BB").addEventListener("click", function() {
+      window.location.href = "#B";
+    });
+
+    document.querySelector(".CC").addEventListener("click", function() {
+      window.location.href = "#C";
+    });
+
+    document.querySelector(".DD").addEventListener("click", function() {
+      window.location.href = "#D";
+    });
+
+    document.querySelector(".EE").addEventListener("click", function() {
+      window.location.href = "#E";
+    });
+
+    document.querySelector(".FF").addEventListener("click", function() {
+      window.location.href = "#F";
+    });
+
+    document.querySelector(".GG").addEventListener("click", function() {
+      window.location.href = "#G";
+    });
+
+    document.querySelector(".HH").addEventListener("click", function() {
+      window.location.href = "#H";
+    });
+
+    document.querySelector(".II").addEventListener("click", function() {
+      window.location.href = "#I";
+    });
+
+    document.querySelector(".JJ").addEventListener("click", function() {
+      window.location.href = "#J";
+    });
+
+    document.querySelector(".KK").addEventListener("click", function() {
+      window.location.href = "#K";
+    });
+
+    document.querySelector(".LL").addEventListener("click", function() {
+      window.location.href = "#L";
+    });
+
+    document.querySelector(".MM").addEventListener("click", function() {
+      window.location.href = "#M";
+    });
+
+    document.querySelector(".NN").addEventListener("click", function() {
+      window.location.href = "#N";
+    });
+
+    document.querySelector(".OO").addEventListener("click", function() {
+      window.location.href = "#O";
+    });
+
+    document.querySelector(".PP").addEventListener("click", function() {
+      window.location.href = "#P";
+    });
+
+    document.querySelector(".QQ").addEventListener("click", function() {
+      window.location.href = "#Q";
+    });
+
 };
 
 // function onEachFeature(feature, layer) {
@@ -99,10 +173,6 @@ function pointToLayer(feature, latlng, attributes){
     layer.bindTooltip(popupContent, {
       className: 'TooltipClass'
     });
-
-    layer.featureId = featureId++;
-
-    console.log(layer.featureId)
 
     //returns layer with circle markers
     return layer;
@@ -155,21 +225,6 @@ function getData(map){
 //Loads map when all functions run and are ready for display
 $(document).ready(createMap);
 
-
-// EVENT LISTENERS FOR MARKERS ON MAP
-// document.querySelector(".AA").addEventListener("click", function() {
-//   window.location.href = "#A";
-// });
-
-// document.querySelector(".AA")[0].addEventListener("click", function() {
-//   window.location.href = "#A";
-// });
-
-// document.addEventListener("DOMContentLoaded", function(event) {
-//   document.querySelector('.AA').addEventListener("click",function() {
-//     window.location.href = "#A"
-//   });
-// });
 
 
 
