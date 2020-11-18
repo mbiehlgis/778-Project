@@ -50,8 +50,15 @@ html {
 
 .leaflet-control-zoom.leaflet-bar.leaflet-control,
 .leaflet-touch.leaflet-bar {
-  padding-top: 430px;
+  padding-top: 850px;
   border: 1px;
+  padding-right: 75px;
+}
+
+.leaflet-control-zoom-in,
+.leaflet-control-zoom-out {
+  width: 500% !important;
+  height: 30px !important;
 }
 
 .leaflet-touch.leaflet-control-layers,
@@ -205,6 +212,25 @@ a:hover {
   border-width: 6px;
   height: 300px;
   width: 440px;
+}
+
+/* PICTURES */
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.column {
+  float: left;
+  width: 45%;
+  padding-left: 15px;
+}
+
+.manilapics {
+  display: inline-block;
+  width: auto;
 }
 
 
